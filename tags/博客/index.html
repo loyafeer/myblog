@@ -87,7 +87,7 @@
 <meta name="description" content="成长记录">
 <meta property="og:type" content="website">
 <meta property="og:title" content="梦境微凉">
-<meta property="og:url" content="https://loyafeer.github.io/myblog/index.html">
+<meta property="og:url" content="https://loyafeer.github.io/myblog/tags/博客/index.html">
 <meta property="og:site_name" content="梦境微凉">
 <meta property="og:description" content="成长记录">
 <meta name="twitter:card" content="summary">
@@ -110,7 +110,7 @@
   };
 </script>
 
-  <title> 梦境微凉 </title>
+  <title> 标签: 博客 | 梦境微凉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -131,9 +131,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -263,204 +261,45 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        博客
+        <small>标签</small>
+      </h2>
+    </div>
+
     
       
 
-  
-  
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
+      <h1 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/myblog/blog/git-hexo搭建博客步骤20161125/" itemprop="url">
               
-                
-                <a class="post-title-link" href="/myblog/blog/git-hexo搭建博客步骤20161125/" itemprop="url">
-                  git+hexo搭建博客步骤
-                </a>
+                <span itemprop="name">git+hexo搭建博客步骤</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-25T19:12:41+08:00" content="2016-11-25">
-              2016-11-25
-            </time>
-          </span>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-11-25T19:12:41+08:00"
+              content="2016-11-25" >
+          11-25
+        </time>
+      </div>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/myblog/categories/搭建博客/" itemprop="url" rel="index">
-                    <span itemprop="name">搭建博客</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h3><h4 id="在服务器根目录下-打开gitbash"><a href="#在服务器根目录下-打开gitbash" class="headerlink" title="在服务器根目录下 打开gitbash"></a>在服务器根目录下 打开gitbash</h4><pre><code>依次输入  
-</code></pre><!--  -->
-<pre><code>mkdir &apos;目录名&apos;  
-</code></pre><!--切换到  并初始化-->
-<pre><code>cd &apos;目录名&apos;
-
-git init
-</code></pre><!--创建一个没有父节点的分支gh-pages，gh==github ，因为github规定，只有该分支中的页面，才会生成网页文件  -->
-<pre><code>git checkout --orphan gh-pages
-</code></pre><!-- 提交(可在 目录名 下新建文件) 加入到本地git库-->
-<pre><code>git add -A
-
-git commit -m &apos;我的博客&apos;
-</code></pre><!--然后，在github创建仓库（取名随意）  -->
-<pre><code>git remote add origin 仓库的ssh地址
-
-git push origin gh-pages
-</code></pre><!-- 可能会出线   Please make sure you have the correct access rigthts  这时需要配置ssh密钥 去.ssh文件夹 pub-->
-<pre><code>ssh-keygen -t rsa
-</code></pre><!-- 重新push 成功后即可登录 https://用户名.github.com/目录名   访问-->
-<h3 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h3><h4 id="在桌面win-R-输入-cmd-回车-跳出命令行-依次输入"><a href="#在桌面win-R-输入-cmd-回车-跳出命令行-依次输入" class="headerlink" title="在桌面win+R 输入 cmd 回车 跳出命令行 依次输入"></a>在桌面win+R 输入 cmd 回车 跳出命令行 依次输入</h4><!-- 速度慢可在后面输入淘宝镜像npm  -->
-<pre><code>npm install hexo-cli -g 
-</code></pre><!-- 在想要创建博客的地方打开gitbash 如服务器根目录 -->
-<pre><code>hexo init blog
-
-cd blog
-
-npm install
-</code></pre><!-- 启动服务器  localhost:4000  即可访问 -->
-<pre><code>hexo server
-</code></pre><!-- 创建新的博客 以md格式存在source-_posts文件中 -->
-<pre><code>hexo new 目录名
-</code></pre><!-- 安装插件 -->
-<pre><code>npm install hexo-deployer-git --save
-</code></pre><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><pre><code>博客根目录-_config.yml
-
-type:git 
-
-repo:(在github新建的仓库的ssh地址) 
-
-branch:master
-</code></pre><!-- md文件转换成html格式再上传 hexo g 生成html-->
-<pre><code>hexo g
-</code></pre><!-- hexo d 发布 -->
-<pre><code>hexo d
-</code></pre><!-- 注意事项：仓库settings-GitHub Pages-Source none改成master branch -->
-<!-- hexo next 主题 -->
-<pre><code>主题文件夹(比如&apos;next&apos;)放到博客根目录themes文件夹中 然后在配置文件中66行 theme:next
-
-主题模式在next文件夹中60行进行更改
-</code></pre><!-- 本地验证 hexo s -->
-<h4 id="一些可能会出现的问题"><a href="#一些可能会出现的问题" class="headerlink" title="一些可能会出现的问题"></a>一些可能会出现的问题</h4><pre><code>1 hexo 本地没问题，github不显示博客主题
-
-解决方法：
-</code></pre><h6 id="更改博客目录-config-yml文件中的url和root属性。"><a href="#更改博客目录-config-yml文件中的url和root属性。" class="headerlink" title="更改博客目录_config.yml文件中的url和root属性。"></a>更改博客目录_config.yml文件中的url和root属性。</h6><pre><code> url: https://用户名.github.io/博客名/
-
-root: /博客名
-
-然后重新部署一下就成功了。
-</code></pre><h4 id="如果上步没成功"><a href="#如果上步没成功" class="headerlink" title="如果上步没成功"></a>如果上步没成功</h4><pre><code>继续更改博客目录-public中vendors文件名，一般改为lib
-
-接着按照下面更改
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">C:\Users\UPC\Documents\hexo\themes\next\.bowerrc:</div><div class="line">   2:   "directory": "source/vendors"</div><div class="line">  </div><div class="line">   C:\Users\UPC\Documents\hexo\themes\next\_config.yml:</div><div class="line">   89: vendors: vendors</div><div class="line">   </div><div class="line">   C:\Users\UPC\Documents\hexo\themes\next\bower.json:</div><div class="line">   22:     "source/vendors",</div></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">C:\Users\UPC\Documents\hexo\themes\next\.bowerrc:</div><div class="line">2:   "directory": "source/lib"</div><div class="line">    </div><div class="line">C:\Users\UPC\Documents\hexo\themes\next\_config.yml:</div><div class="line">89: vendors: lib</div><div class="line"></div><div class="line">C:\Users\UPC\Documents\hexo\themes\next\bower.json:</div><div class="line">22:     "source/lib",</div></pre></td></tr></table></figure>
-
-接着 hexo clean 
-
-     hexo g 
-
-     hexo d
-
-2 博客页面有可能会显示德文
-
-解决方法：
-</code></pre><h6 id="next文件夹-language文件夹-zh-Hans-yml-重命名-zh-CN-yml"><a href="#next文件夹-language文件夹-zh-Hans-yml-重命名-zh-CN-yml" class="headerlink" title="next文件夹-language文件夹-zh-Hans.yml 重命名 zh-CN.yml"></a>next文件夹-language文件夹-zh-Hans.yml 重命名 zh-CN.yml</h6><pre><code>博客根目录_config.yml-language: zh-CN
-
-hexo clean
-
-hexo s
-</code></pre><h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">hexo+git</a></p>
-<p><a href="http://www.ituring.com.cn/article/198930" target="_blank" rel="external">next</a></p>
-<p><a href="http://www.cnblogs.com/syd192/p/6074323.html" target="_blank" rel="external">next 配置</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
     
-  </section>
+  </div>
 
   
 

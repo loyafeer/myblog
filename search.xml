@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[git+hexo搭建博客步骤]]></title>
+      <url>%2Fmyblog%2Fblog%2Fgit-hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%AD%A5%E9%AA%A420161125%2F</url>
+      <content type="text"><![CDATA[配置git在服务器根目录下 打开gitbash依次输入 mkdir &apos;目录名&apos; cd &apos;目录名&apos; git init git checkout --orphan gh-pages git add -A git commit -m &apos;我的博客&apos; git remote add origin 仓库的ssh地址 git push origin gh-pages ssh-keygen -t rsa 配置hexo在桌面win+R 输入 cmd 回车 跳出命令行 依次输入 npm install hexo-cli -g hexo init blog cd blog npm install hexo server hexo new 目录名 npm install hexo-deployer-git --save 配置博客博客根目录-_config.yml type:git repo:(在github新建的仓库的ssh地址) branch:master hexo g hexo d 主题文件夹(比如&apos;next&apos;)放到博客根目录themes文件夹中 然后在配置文件中66行 theme:next 主题模式在next文件夹中60行进行更改 一些可能会出现的问题1 hexo 本地没问题，github不显示博客主题 解决方法： 更改博客目录_config.yml文件中的url和root属性。 url: https://用户名.github.io/博客名/ root: /博客名 然后重新部署一下就成功了。 如果上步没成功继续更改博客目录-public中vendors文件名，一般改为lib 接着按照下面更改 12345678C:\Users\UPC\Documents\hexo\themes\next\.bowerrc: 2: "directory": "source/vendors" C:\Users\UPC\Documents\hexo\themes\next\_config.yml: 89: vendors: vendors C:\Users\UPC\Documents\hexo\themes\next\bower.json: 22: "source/vendors", 12345678C:\Users\UPC\Documents\hexo\themes\next\.bowerrc:2: "directory": "source/lib" C:\Users\UPC\Documents\hexo\themes\next\_config.yml:89: vendors: libC:\Users\UPC\Documents\hexo\themes\next\bower.json:22: "source/lib", 接着 hexo clean hexo g hexo d 2 博客页面有可能会显示德文 解决方法： next文件夹-language文件夹-zh-Hans.yml 重命名 zh-CN.yml博客根目录_config.yml-language: zh-CN hexo clean hexo s 参考资料hexo+git next next 配置]]></content>
+    </entry>
+
+    
+  
+  
+</search>

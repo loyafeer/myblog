@@ -68,7 +68,7 @@
 <link href="/myblog/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="FE,前端,记录" />
+  <meta name="keywords" content="css," />
 
 
 
@@ -84,15 +84,28 @@
 
 
 
-<meta name="description" content="成长记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="梦境微凉">
-<meta property="og:url" content="https://loyafeer.github.io/myblog/categories/搭建博客/index.html">
+<meta name="description" content="CSS的部分兼容写法火狐与IE浏览器之间关于width的不同定义CSS ’width’ 指的是标准CSS中所指的width的宽度，
+
+在firefox中的宽度就是这个宽度。它只包含容器中内容的宽度。
+而Internet Explorer ’width’则是指整个容器的宽度，包括内容，padding ，border。 
+Firefox中：容器占的宽度=内容宽度+padding宽度+border宽度">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS部分兼容写法">
+<meta property="og:url" content="https://loyafeer.github.io/myblog/blog/css的部分兼容写法20161130/index.html">
 <meta property="og:site_name" content="梦境微凉">
-<meta property="og:description" content="成长记录">
+<meta property="og:description" content="CSS的部分兼容写法火狐与IE浏览器之间关于width的不同定义CSS ’width’ 指的是标准CSS中所指的width的宽度，
+
+在firefox中的宽度就是这个宽度。它只包含容器中内容的宽度。
+而Internet Explorer ’width’则是指整个容器的宽度，包括内容，padding ，border。 
+Firefox中：容器占的宽度=内容宽度+padding宽度+border宽度">
+<meta property="og:updated_time" content="2016-12-02T07:52:21.513Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梦境微凉">
-<meta name="twitter:description" content="成长记录">
+<meta name="twitter:title" content="CSS部分兼容写法">
+<meta name="twitter:description" content="CSS的部分兼容写法火狐与IE浏览器之间关于width的不同定义CSS ’width’ 指的是标准CSS中所指的width的宽度，
+
+在firefox中的宽度就是这个宽度。它只包含容器中内容的宽度。
+而Internet Explorer ’width’则是指整个容器的宽度，包括内容，padding ，border。 
+Firefox中：容器占的宽度=内容宽度+padding宽度+border宽度">
 
 
 
@@ -110,7 +123,7 @@
   };
 </script>
 
-  <title> 分类: 搭建博客 | 梦境微凉 </title>
+  <title> CSS部分兼容写法 | 梦境微凉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -131,7 +144,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -262,47 +275,200 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        搭建博客
-        <small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CSS部分兼容写法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-30T21:30:11+08:00" content="2016-11-30">
+              2016-11-30
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/myblog/categories/兼容/" itemprop="url" rel="index">
+                    <span itemprop="name">兼容</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h2 id="CSS的部分兼容写法"><a href="#CSS的部分兼容写法" class="headerlink" title="CSS的部分兼容写法"></a>CSS的部分兼容写法</h2><h5 id="火狐与IE浏览器之间关于width的不同定义"><a href="#火狐与IE浏览器之间关于width的不同定义" class="headerlink" title="火狐与IE浏览器之间关于width的不同定义"></a>火狐与IE浏览器之间关于width的不同定义</h5><p>CSS ’width’ 指的是标准CSS中所指的width的宽度，</p>
+<ul>
+<li>在firefox中的宽度就是这个宽度。它只包含容器中内容的宽度。</li>
+<li>而Internet Explorer ’width’则是指整个容器的宽度，包括内容，padding ，border。 </li>
+<li>Firefox中：容器占的宽度=内容宽度+padding宽度+border宽度 </li>
+<li><p>IE中：内容宽度=您定义的容器宽度(Internet Explorer ’width’)-padding宽度-border宽度  <strong>所以，如果IE中定义 width:120px;padding:5px 的话，所显示的宽度就是120px.</strong>  即padding:5px是在width里面。  而Firefox中，上面这个定义，显示宽度就是 130 px;  所以，我们就必须这样定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">width:115px !important;width:120px;padding:5px;</div></pre></td></tr></table></figure>
+<h3 id="hack"><a href="#hack" class="headerlink" title="hack"></a>hack</h3><p>由于不同的浏览器，比如Internet Explorer 6,Internet Explorer 7,Mozilla Firefox等，对CSS的解析认识不一样，因此会导致生成的页面效果不一样，得不到我们所需要的页面效果。</p>
+<p>这个时候我们就需要针对不同的浏览器去写不同的CSS，让它能够同时兼容不同的浏览器，能在不同的浏览器中也能得到我们想要的页面效果。</p>
+<p><strong>这个针对不同的浏览器写不同的CSS code的过程，就叫CSS hack,也叫写CSS hack</strong></p>
+</li>
+<li><p>!important这个规则对Ie6.0,Ie7.0和Firefox能写hack</p>
+</li>
+<li><p>*对于Ie系列浏览器都能够识别， firefox 浏览器则不能识别;</p>
+</li>
+<li><p>!important只有Ie7.0和firefox可以识别，但是Ie6.0不能成功应用.</p>
+<ul>
+<li><p>1 区别ie与firefox的hack为:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">border:2px solid #f00;*border:1px solid #f00;</div></pre></td></tr></table></figure>
+</li>
+<li><p>2 区别Ie6.0 与Ie7.0、firefox的hack为:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">border:1px solid #f00!important;border:2px solid #f00;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>在(1)中，之所以’*‘把放在后面是因为ff不识别,而导致只对它设置了一次border;而ie 系列进行了两次border设置后，后一个属性覆盖了前一个属性，故为一像素的边框。</p>
+</li>
+<li><p>在(2)中，之所以把!important放在第一个border 设置，是因为它把这次border的优先级提高了，即使后面在一次甚至在N次设置border 也无效，但是Ie6.0对这个规则不接受，而导致它应用了第二次的border 设置，也就是第二次覆盖了第一次的这一原理， 并不是它不识别!important;所以它的border为2 像素的红框.</p>
+</li>
+</ul>
+<h4 id="部分hack写法总结："><a href="#部分hack写法总结：" class="headerlink" title="部分hack写法总结："></a>部分hack写法总结：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#box&#123;</div><div class="line"> color:red; //所有浏览器都支持</div><div class="line"> color:red !important; //Firefox、IE7支持</div><div class="line"> _color:red;  //IE6支持 </div><div class="line"> *color:red;  //IE6、IE7支持 </div><div class="line"> *+color:red; //IE7支持 </div><div class="line"> color:red \9; //IE6、IE7、IE8支持</div><div class="line"> color:red \0; //IE8支持</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="网站如何同时兼容IE6、IE7、IE8"><a href="#网站如何同时兼容IE6、IE7、IE8" class="headerlink" title="网站如何同时兼容IE6、IE7、IE8"></a>网站如何同时兼容IE6、IE7、IE8</h2><ol>
+<li><p>第一招：<strong>给常用CSS规定属性值。</strong>body,div,dl,dt,dd,ol,h1,h2,h3,h4,h5,h6,form,input,p,th,td{margin:0;padding:0;}img{border:0px;}ul {margin:0px;padding:0px;}/ul li {list-style:none;}上面的建站常用代码就相是格式化CSS样式，让各浏览器按照我们设置的属性值渲染网页</p>
+</li>
+<li><p>第二招：<strong>IE和FF下对象居中问题</strong></p>
+<p>IE下大家应该知道只要设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">body&#123;text-align:center;&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这样就可以居中显示。但是这样的方法在FF不行的。这里就需要给修改成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">body:&#123;text-align:center;margin:0px auto;&#125;Margin</div></pre></td></tr></table></figure></p>
+<p>意思就是上下距离为0像素，左右为自动。所以FF就会居中显示。</p>
+<ol>
+<li><p>第三招：<strong>垂直居中（仅只用于一行）</strong></p>
+<p>比如说一个高30px的div，默认是会显示在左上角，如果想垂直居中对其可以加个line-height:30px;样式。</p>
+<p>如果你想让他居下方则在修改line-height:30px;<br>数值越大越局下，为了防止撑破层，还需要再给一个样式overflow:hidden;(超出的部分不显示)</p>
+</li>
+<li><p>第四招：<strong>给每一个块对象设置三个样式</strong></p>
+<pre><code class="width:**px;height:**px;overflow:hidden;">
+</code></pre>
+<p>即便高、宽是属性值是自动那么也需要去设置这三个样式。目的就是解决浏览器默认值的问题。</p>
+</li>
+<li><p>第五招：<strong>针对IE6、IE7、FF的css样式(这一招在特殊情况下经常用到)</strong></p>
+<p>原来建设网站经常使用!important来设置优先权，但有了IE7之后就不行了。</p>
+<p>下面给大家个可以解决IE6、IE7、FF各个CSS优先权的方法</p>
+<p><strong> #1 { color: #333; }  FF环境</strong>  </p>
+<p><strong>\* html #1 { color: #666; } IE6环境 </strong></p>
+<p><strong>\*+html #1 { color: #999; }  IE7环境</strong></p>
+<p><strong>上面的书写顺序一定不能去改变。</strong></p>
+<p><strong>这样子网页在FF下显示#333，IE6下显示#666，IE7下显示#999;</strong></p>
+</li>
+</ol>
+<h4 id="moz代表firefox浏览器私有属性"><a href="#moz代表firefox浏览器私有属性" class="headerlink" title="-moz代表firefox浏览器私有属性"></a>-moz代表firefox浏览器私有属性</h4><h4 id="ms代表IE浏览器私有属性"><a href="#ms代表IE浏览器私有属性" class="headerlink" title="-ms代表IE浏览器私有属性"></a>-ms代表IE浏览器私有属性</h4><h4 id="webkit代表chrome、safari私有属性"><a href="#webkit代表chrome、safari私有属性" class="headerlink" title="-webkit代表chrome、safari私有属性"></a>-webkit代表chrome、safari私有属性</h4>
+      
+    </div>
 
-      <h1 class="post-title">
+    <div>
+      
         
-            <a class="post-title-link" href="/myblog/blog/git-hexo搭建博客步骤20161125/" itemprop="url">
-              
-                <span itemprop="name">git+hexo搭建博客步骤</span>
-              
-            </a>
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-25T19:12:41+08:00"
-              content="2016-11-25" >
-          11-25
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/myblog/tags/css/" rel="tag">#css</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/myblog/blog/html5的备忘录20161129/" rel="next" title="HTML5">
+                <i class="fa fa-chevron-left"></i> HTML5
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </section>
 
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -310,6 +476,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -329,8 +499,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/myblog/uploads/avatar.jpg"
@@ -391,6 +570,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS的部分兼容写法"><span class="nav-text">CSS的部分兼容写法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#火狐与IE浏览器之间关于width的不同定义"><span class="nav-text">火狐与IE浏览器之间关于width的不同定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hack"><span class="nav-text">hack</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#部分hack写法总结："><span class="nav-text">部分hack写法总结：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站如何同时兼容IE6、IE7、IE8"><span class="nav-text">网站如何同时兼容IE6、IE7、IE8</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#moz代表firefox浏览器私有属性"><span class="nav-text">-moz代表firefox浏览器私有属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ms代表IE浏览器私有属性"><span class="nav-text">-ms代表IE浏览器私有属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#webkit代表chrome、safari私有属性"><span class="nav-text">-webkit代表chrome、safari私有属性</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -494,6 +684,10 @@
 
 
   
+  <script type="text/javascript" src="/myblog/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/myblog/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
